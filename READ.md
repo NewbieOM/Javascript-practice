@@ -17,7 +17,6 @@ This repository is where I refresh my JavaScript fundamentals, improve my coding
 - Calculator
 - Number Guessing Game
 - To-Do List
-- Quiz App
 
 ### Major Projects
 - Expense Tracker
