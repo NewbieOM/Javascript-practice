@@ -21,7 +21,6 @@ This repository is where I refresh my JavaScript fundamentals, improve my coding
 
 ### Major Projects
 - Expense Tracker
-- Movie Search App
 - Weather Dashboard
 
 Projects will be added as I build them.
