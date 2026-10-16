@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Expense Tracker</h1>
+
+        <section class="summary">
+            <div>
+                <p>Total Income</p>
+                <h2 id="total-income">₹0</h2>
+            </div>
+            <div>
+                <p>Total Expenses</p>
+                <h2 id="total-expenses">₹0</h2>
+            </div>
+            <div>
+                <p>Balance</p>
+                <h2 id="balance">₹0</h2>
+            </div>
+        </section>
+
+        <form id="transaction-form">
+            <input id="description" type="text" placeholder="Description" required>
+
+            <input id="amount" type="number" min="0.01" step="0.01"
+                placeholder="Amount" required>
+
+            <select id="type">
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Salary">Salary</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Add Transaction</button>
+        </form>
+
+        <div class="list-heading">
+            <h2>Transactions</h2>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expenses</option>
+            </select>
+        </div>
+
+        <ul id="transaction-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

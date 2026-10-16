@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🎬 Movie Search</h1>
+        <p>Find movies and discover something to watch.</p>
+
+        <form id="search-form">
+            <input
+                type="search"s
+                id="search-input"
+                placeholder="Enter a movie title..."
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="status" role="status"></p>
+        <section id="movie-results" class="movie-grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
